@@ -13,12 +13,6 @@
     <Grid>
         <TabControl x:Name="tbCtrlAutoLot" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
             <TabItem Header="Customers">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="Inventory">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="Orders">
                 <Grid Background="#FFE5E5E5" DataContext="{StaticResource customerViewSource}">
                     <DataGrid x:Name="customerDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="295,52,32.189,226.943" RowDetailsVisibilityMode="VisibleWhenSelected">
                         <DataGrid.Columns>
@@ -53,6 +47,13 @@
                     <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="659,153,0,0" VerticalAlignment="Top" Width="75"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Inventory">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Orders">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+
         </TabControl>
 
     </Grid>
